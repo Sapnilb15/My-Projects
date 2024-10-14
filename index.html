@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Poker Probability Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Poker Probability Calculator</h1>
+        <div class="form-group">
+            <label for="numPlayers">Number of Players:</label>
+            <input type="number" id="numPlayers" min="2" max="10" required>
+        </div>
+
+        <h2>Your Cards</h2>
+        <div class="card-input">
+            <label for="card1">Card 1 (Value):</label>
+            <select id="card1" required>
+                <!-- Card value options -->
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="J">J</option>
+                <option value="Q">Q</option>
+                <option value="K">K</option>
+                <option value="A">A</option>
+            </select>
+            <label for="card1Suit">Suit:</label>
+            <select id="card1Suit" required>
+                <option value="hearts">Hearts</option>
+                <option value="diamonds">Diamonds</option>
+                <option value="clubs">Clubs</option>
+                <option value="spades">Spades</option>
+            </select>
+        </div>
+        
+        <div class="card-input">
+            <label for="card2">Card 2 (Value):</label>
+            <select id="card2" required>
+                <!-- Card value options -->
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="J">J</option>
+                <option value="Q">Q</option>
+                <option value="K">K</option>
+                <option value="A">A</option>
+            </select>
+            <label for="card2Suit">Suit:</label>
+            <select id="card2Suit" required>
+                <option value="hearts">Hearts</option>
+                <option value="diamonds">Diamonds</option>
+                <option value="clubs">Clubs</option>
+                <option value="spades">Spades</option>
+            </select>
+        </div>
+        
+        <div class="card-input">
+            <label for="card3">Card 3 (Value):</label>
+            <select id="card3" required>
+                <!-- Card value options -->
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="J">J</option>
+                <option value="Q">Q</option>
+                <option value="K">K</option>
+                <option value="A">A</option>
+            </select>
+            <label for="card3Suit">Suit:</label>
+            <select id="card3Suit" required>
+                <option value="hearts">Hearts</option>
+                <option value="diamonds">Diamonds</option>
+                <option value="clubs">Clubs</option>
+                <option value="spades">Spades</option>
+            </select>
+        </div>
+
+        <button onclick="calculateProbability()">Calculate Probability</button>
+
+        <h2>Results</h2>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
